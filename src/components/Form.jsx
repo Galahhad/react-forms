@@ -34,7 +34,7 @@ function Form() {
       <input className={`send_input ${send ? 'sended_class' : ''} ${blank ? 'error' : ''}`} value={text} onChange={handleText} onBlur={handleBlur}/>
       <button className='send_button' type='submit' disabled={text.trim().length === 0 ? true : false}>Отправить</button>
     </form>
-    {send && <p className='sended'>Сообщение успешно отправено</p>}
+    {send && <p className='sended'>Сообщение успешно отправлено</p>}
     {blank && <p className='is-error'>Поле ввода не должно быть пустым</p>}
     </>
   )
