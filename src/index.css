@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  width: 600px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+.send_form {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.send_input, .send_button {
+  display: block;
+}
+.send_input {
+  width: 75%;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid gray;
+  font-size: 25px;
+  padding-left: 5px;
+}
+.send_button {
+  width: 25%;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: rgb(39, 111, 245);
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.send_button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.sended {
+  padding: 0;
+  color: limegreen;
+  text-align: start;
+  font-style: italic;
+}
+.sended_class {
+  box-shadow: 0 3px 15px 0 limegreen;
+}
+.is-error {
+  padding: 0;
+  color: red;
+  text-align: start;
+  font-style: italic;
+}
+.error {
+  box-shadow: 0 3px 15px 0 red;
+}
